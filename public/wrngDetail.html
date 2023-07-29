@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Invalid Details </title>
+     <style>
+          .wrapper {
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+               height: 100vh;
+          }
+
+          .login {
+               color: white;
+               background-color: rgb(76, 43, 226);
+               padding: 10px;
+               border-radius: 6px;
+               text-decoration: none;
+               font-size: larger;
+               font-weight: bolder;
+               padding-left: 14px;
+               padding-right: 14px;
+          }
+     </style>
+</head>
+
+<body>
+     <div class="wrapper">
+          <h1>
+               Incorrect password entered !
+          </h1>
+          <h1 id="userdetail"></h1>
+          <a href="/login" class="login">
+               Try Again
+          </a>
+     </div>
+</body>
+<script>
+     const user = document.getElementById("userdetail");
+
+
+     function Time() {
+          return (new Date().toLocaleString("en-US", {
+               hour: "numeric",
+               minute: "numeric",
+               second: "numeric",
+               hour12: true
+          }));
+     }
+     const time = Time();
+     user.innerText = "User tried at " + time;
+
+
+</script>
+
+</html>

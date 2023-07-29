@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>SignUp Page</title>
+     <style>
+          * {
+               padding: 0;
+               box-sizing: border-box;
+               margin: 0;
+               font-family: Cambria, Cochin, Times, 'Times New Roman', serif;
+
+          }
+
+          .navbar {
+               background-color: rgb(88, 99, 156);
+               padding: 8px;
+               text-align: center;
+               color: aliceblue;
+               box-shadow: 5px 2px 8px 5px rgb(118, 127, 151);
+               font-size: larger;
+          }
+
+          .section {
+               max-width: 1300px;
+               margin: 0 auto;
+               display: flex;
+               justify-content: space-around;
+               padding: 20px;
+          }
+
+          .leftsection {
+               margin-top: 10px;
+               height: 500px;
+               width: 500px;
+          }
+
+          .rightsection {
+               display: flex;
+               flex-direction: column;
+               padding: 30px;
+
+               margin-top: 40px;
+               height: aut;
+               width: 400px;
+               gap: 8px;
+               border: 2px solid whitesmoke;
+               border-radius: 10px;
+
+          }
+
+
+          #login {
+               background-color: rgb(88, 99, 156);
+               width: 100%;
+               border: none;
+               padding: 8px;
+               color: white;
+               font-size: larger;
+               font-weight: bold;
+               border-radius: 4px;
+               margin-top: 2rem;
+               cursor: pointer;
+          }
+
+          #signup {
+               color: rgb(88, 99, 156);
+               font-family: Georgia, 'Times New Roman', Times, serif;
+               font-weight: bolder;
+               text-decoration: underline;
+               cursor: pointer;
+          }
+
+          input {
+               width: 100%;
+               padding: 0.4rem;
+               font-size: 0.9rem;
+               outline: none;
+               border: 2px solid rgb(167, 167, 167);
+
+               border-radius: 4px;
+               margin: 0.4rem 0;
+          }
+
+          .inputlabel {
+               font-size: 1.2rem;
+               margin: 0.4rem 0;
+               font-weight: 800;
+          }
+
+          #siguptext {
+               color: gray;
+               font-size: 1rem;
+               font-weight: 500;
+          }
+
+          #signup:hover {
+               color: rgb(102, 15, 183);
+
+               transform: scale(1.08);
+          }
+
+          #login:hover {
+               background-color: rgb(102, 15, 183);
+
+               transform: scale(1.08);
+          }
+
+          footer {
+               background-color: rgb(88, 99, 156);
+               padding: 8px;
+               text-align: center;
+               color: aliceblue;
+               box-shadow: 5px -2px 4px 3px rgb(118, 127, 151);
+               font-size: larger;
+               position: fixed;
+               bottom: 0;
+               width: 100%;
+          }
+     </style>
+</head>
+
+<body>
+     <nav class="navbar">
+          <h1>SignUp</h1>
+     </nav>
+     <div class="section">
+          <!-- left section  -->
+          <div class="leftsection">
+               <img src="https://img.freepik.com/free-vector/illustration-cartoon-female-user-entering-login_241107-682.jpg?size=626&ext=jpg"
+                    alt="no image" srcset="">
+          </div>
+          <!-- right section -->
+          <div class="rightsection">
+               <h1>Sign Up Here</h1>
+               <p id="siguptext">Already have an account ? <a href="http://localhost:8000/login">
+
+                         <span id="signup">Login Here</span> </a></p>
+               <form action="/signup" method="post">
+                    <div>
+                         <div class="inputlabel">Email Address</div>
+                         <input required type="email" name="email" placeholder="you@example.com">
+                    </div>
+                    <div>
+                         <div class="inputlabel">First Name</div>
+                         <input required type="text" name="firstname" placeholder="Example - Deepti">
+                    </div>
+                    <div>
+                         <div class="inputlabel">Last Name</div>
+                         <input required type="text" name="Lastname" placeholder="Example - Mehra">
+                    </div>
+                    <div>
+
+                         <div class="inputlabel">Password</div>
+
+                         <input required type="password" name="password" placeholder="6 character or more">
+                    </div>
+
+                    <button type="submit" id="login">Sign Up</button>
+
+               </form>
+          </div>
+     </div>
+     <footer>Created By Deepti</footer>
+
+
+</body>
+
+</html>
